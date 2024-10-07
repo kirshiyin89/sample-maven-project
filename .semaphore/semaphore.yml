@@ -29,7 +29,6 @@ blocks:
             - checkout
             - 'curl --compressed https://downloads.snyk.io/cli/stable/snyk-linux -o snyk'
             - chmod +x ./snyk
-            - '#sudo chmod 755 -R /usr/local/bin/'
             - sudo mv ./snyk /usr/local/bin/
             - SNYK_TOKEN=$SNYK_TOKEN snyk test
       secrets:
