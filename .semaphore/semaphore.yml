@@ -33,3 +33,5 @@ blocks:
             - sudo chmod 777 -R /usr/local/bin/
             - mv ./snyk /usr/local/bin/
             - SNYK_TOKEN=$SNYK_TOKEN snyk test
+      secrets:
+        - name: Snyk
