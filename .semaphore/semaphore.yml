@@ -19,6 +19,7 @@ blocks:
         - name: Test
           commands:
             - checkout
+            - sem-version java 17
             - mvn test
   - name: Security Scan
     task:
